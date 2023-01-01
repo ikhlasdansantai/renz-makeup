@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="public/css/output.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <!-- <body class="h-[10000000000000px]"> -->
+  <body>
+    <div class="container-all">
+      <header class="container max-w-full mx-auto bg-primary min-h-[100vh] min-[1700px]:min-h-[40rem] flex flex-col">
+        <!-- *Navbar BOS -->
+        <nav class="container bg-[#263238] max-w-full fixed bottom-0 md:relative sm:p-standart z-50">
+          <section class="container nav-wrappers max-w-full sm:max-w-[90rem] p-standart md:p-0 lg:p-standart md:mx-auto flex justify-between items-center bg-[#263238]">
+            <h5 class="logo text-2xl font-bold text-slate-100 tracking-wider">RenzMakeup</h5>
+
+            <div class="nav-desktop hidden ml-auto md:flex justify-end items-center justify-self-end">
+              <ul class="flex md:flex-row text-slate-100 gap-x-2 lg:gap-x-5">
+                <li class="p-2"><a class="font-semibold text-lg hover:text-slate-300" href="#">Home</a></li>
+                <li class="p-2"><a href="#about" class="font-semibold text-lg hover:text-slate-300">About</a></li>
+                <li class="p-2"><a href="#services" class="font-semibold text-lg hover:text-slate-300">Layanan</a></li>
+                <li class="p-2"><a class="font-semibold text-lg hover:text-slate-300" href="#">Portfolio</a></li>
+                <li class="p-2"><a class="font-semibold text-lg hover:text-slate-300" href="#">Reviews</a></li>
+                <li class="p-2"><a class="font-semibold text-lg hover:text-slate-300" href="#">Contact</a></li>
+              </ul>
+            </div>
+
+            <section class="nav-mobile relative">
+              <section class="fries-menu w-[25px] h-[20px] flex flex-col justify-between items-center group md:hidden relative z-50">
+                <input type="checkbox" id="checkbox" class="hidden opacity-0" />
+                <span class="block bg-white w-full h-[2px]"></span>
+                <span class="block bg-white w-[70%] self-end h-[2px]"></span>
+                <span class="block bg-white w-full h-[2px]"></span>
+              </section>
+
+              <div
+                class="nav-mobile-content container transition duration-300 translate-y-[100%] grid grid-cols-3 mx-auto fixed gap-10 pb-[5rem] pt-[3rem] h-[60vh] left-0 right-0 bottom-0 -z-10 rounded-[1.2rem] border-4 border-slate-600 overflow-hidden bg-white"
+              >
+                <span class="nav-menu flex flex-col justify-center items-center gap-2">
+                  <img src="public/assets/img/home.png" alt="" class="block w-[3.5rem]" />
+                  <p>Home</p>
+                </span>
+                <span class="nav-menu flex flex-col justify-center items-center gap-2">
+                  <img src="public/assets/img/woman.png" alt="" class="block w-[3.5rem]" />
+                  <p>About</p>
+                </span>
+                <span class="nav-menu flex flex-col justify-center items-center gap-2">
+                  <img src="public/assets/img/makeup-bw.png" alt="" class="block w-[3.5rem]" />
+                  <p>Layanan</p>
+                </span>
+                <span class="nav-menu flex flex-col justify-center items-center gap-2">
+                  <img src="public/assets/img/success.png" alt="" class="block w-[3.5rem]" />
+                  <p>Portfolio</p>
+                </span>
+                <span class="nav-menu flex flex-col justify-center items-center gap-2">
+                  <img src="public/assets/img/thumbs-up.png" alt="" class="block w-[3.5rem]" />
+                  <p>Reviews</p>
+                </span>
+                <span class="nav-menu flex flex-col justify-center items-center gap-2">
+                  <i class="fa-sharp fa-solid fa-address-card text-[3.5rem]"></i>
+                  <p>Contact</p>
+                </span>
+              </div>
+            </section>
+          </section>
+        </nav>
+
+        <!-- ======================= 
+            *header-contents-wrapper
+            ========================  -->
+        <div class="container max-w-full gap-y-12 p-standart mt-8 sm:mt-0 flex flex-col sm:min-h-[90vh] min-[1700px]:min-h-[40rem] sm:flex-row sm:max-w-[90rem] sm:justify-between sm:items-center">
+          <div class="header-titles container font-Jost font-semibold text-left sm:max-w-6/12">
+            <h2 class="text-sm font-sans text-secondary tracking-widest mb-2 lg:text-xl">Hasil yang alami</h2>
+            <h1 class="max-[350px]:text-xl text-3xl md:text-3xl lg:text-[2.5rem] lg:leading-[3.5rem] xl:text-5xl xl:leading-[4rem] xl:max-w-[23ch]">Transformasi Wajah Anda Dengan Kemampuan Makeup Kami</h1>
+            <button type="submit" class="border max-[350px]:text-sm inline-block max-w-xs px-7 py-3 mt-6 bg-black text-slate-50 font-bold tracking-widest active:ring active:ring-secondary">Hubungi saya</button>
+          </div>
+          <div class="header-icon container max-w-xs sm:max-w-2xl flex">
+            <img src="public/assets/img/Makeup artist-pana 1.png" alt="" class="block ml-auto" />
+          </div>
+        </div>
+      </header>
+
+      <main id="main" class="container max-w-full mx-auto my-0 sm:my-12 p-standart font-Jost">
+        <!-- ======== 
+            *About ME
+            =========  -->
+        <section id="about" class="text-center mx-auto max-w-[90rem] my-10 py-8">
+          <h2 class="text-3xl font-bold text-third lg:text-4xl">Tentang Saya</h2>
+          <h5 class="font-sans font-semibold text-slate-400">Pengenalan</h5>
+          <div class="about-contents mt-10 flex flex-col sm:flex-row gap-y-6 gap-x-6 sm:justify-between sm:items-center">
+            <div class="about-img max-w-xl sm:mr-auto sm:w-6/12">
+              <img src="public/assets/img/me.jpg" alt="renz pict" class="block" />
+            </div>
+            <div class="about-titles text-justify sm:w-6/12">
+              <p class="text-base leading-7 text-slate-700 sm:text-lg md:text-xl lg:text-2xl lg:leading-10">
+                Saya adalah seorang <span class="text-secondary font-semibold"> MakeUp artist profesional </span> yang telah berpengalaman lebih dari 5 tahun. Saya memiliki kemampuan untuk menciptakan berbagai gaya rias mulai dari natural
+                hingga galamor. sesuai dengan kebutuhan dan preferensi klien, Saya juga selalu memperbarui pengetahuan dan teknik terbaru di bidang ini untuk memberikan hasil yang terbaik bagi klien.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========= 
+            *Qualification Education or Experience 
+             ======== -->
+        <section id="qualification" class="container text-center mx-auto max-w-[90rem] my-20 py-8">
+          <h2 class="text-3xl font-bold text-third lg:text-4xl">Kualifikasi</h2>
+          <h5 class="font-sans font-semibold text-slate-400">Pendidikan dan Pelatihan</h5>
+
+          <div class="tabs tabs-container flex max-w-lg mx-auto justify-between my-12">
+            <div class="tab w-6/12 flex flex-col-reverse justify-center items-center mx-auto pr-4 my-12 gap-5 border-r cursor-pointer max-[350px]:gap-2 sm:gap-7">
+              <h2 class="text-slate-900 text-2xl leading-3 font-bold text-center max-[350px]:text-lg sm:text-[27px]">Pendidikan</h2>
+              <div class="tab-icon w-9 sm:w-10">
+                <img src="public/assets/img/graduation-hat.png" alt="graduation-hat" class="block" />
+              </div>
+            </div>
+
+            <div class="tab w-6/12 flex flex-col-reverse justify-between items-center mx-auto pl-4 my-12 gap-5 cursor-pointer max-[350px]:gap-2 sm:gap-7">
+              <h2 class="text-slate-900 text-2xl leading-3 font-bold text-center max-[350px]:text-lg sm:text-[27px]">Keahlian</h2>
+              <div class="tab-icon w-9 sm:w-10">
+                <img src="public/assets/img/makeup.png" alt="suitcase-icon" class="block" />
+              </div>
+            </div>
+          </div>
+
+          <!-- =========
+              *Pendidikan
+              ========== -->
+          <div class="tab-content active -mt-3">
+            <!-- <h2 class="text-lg font-bold">Pendidikan</h2> -->
+            <ul class="timeline flex container sm:max-w-[60%] lg:w-[36%]">
+              <li class="timeline-container left-container">
+                <div class="text-box">
+                  <h2 class="font-bold text-lg text-secondary max-[322px]:mr-1 sm:text-2xl">SMP PGRI</h2>
+                  <small class="text-slate-600 font-normal">1970 - 1976</small>
+                </div>
+              </li>
+
+              <li class="timeline-container right-container ml-4 self-end">
+                <div class="text-box">
+                  <h2 class="font-bold text-lg text-secondary sm:text-2xl">SMK PAS 1</h2>
+                  <small class="text-slate-600 font-nomral">1976 - 1979</small>
+                </div>
+              </li>
+
+              <li class="timeline-container left-container pr-2">
+                <div class="text-box">
+                  <h2 class="font-bold text-lg text-secondary max-[322px]:mr-1 sm:text-2xl">Beauty Intensive Course La Tulipe</h2>
+                  <small class="text-slate-600 font-normal">2015</small>
+                  <button class="block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white">lihat sertifikat</button>
+                </div>
+              </li>
+
+              <li class="timeline-container right-container pl-4 self-end">
+                <div class="text-box">
+                  <h2 class="font-bold text-lg text-secondary sm:text-2xl">Unna Hair & Beauty School</h2>
+                  <small class="text-slate-600 font-nomral block">2015 - 9 Months</small>
+                  <button class="inline-block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white">lihat sertifikat</button>
+                </div>
+              </li>
+
+              <li class="timeline-container left-container pr-3">
+                <div class="text-box">
+                  <h2 class="font-bold text-lg text-secondary max-[322px]:mr-1 sm:text-2xl">LPK Hedy's</h2>
+                  <small class="text-slate-600 font-normal">2015 - 2016</small>
+                  <button class="block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white">lihat sertifikat</button>
+                </div>
+              </li>
+
+              <li class="timeline-container right-container self-end pl-4">
+                <div class="text-box">
+                  <h2 class="font-bold text-lg text-secondary sm:text-2xl">UJK LSK di UNNA</h2>
+                  <small class="text-slate-600 font-nomral block">1976 - 1979</small>
+                  <button class="inline-block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white">lihat sertifikat</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- =========
+              *Keahlian
+              ========== -->
+          <div class="tab-content -mt-3">
+            <!-- <h2 class="text-lg font-bold">Pengalaman</h2> -->
+            <ul class="timeline flex container sm:max-w-[60%] lg:w-[36%]">
+              <li class="timeline-container left-container">
+                <div class="text-box">
+                  <h2 class="font-bold text-lg text-secondary max-[322px] :mr-1 sm:text-2xl">MakeUp Pernikahan</h2>
+                  <small class="text-slate-600 font-normal block">1970 - 1976</small>
+                  <button class="block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white">lihat Deskripsi</button>
+                </div>
+              </li>
+
+              <li class="timeline-container right-container self-end pl-5">
+                <div class="text-box">
+                  <h2 class="font-bold text-lg text-secondary sm:text-2xl">MakeUp Pranikah</h2>
+                  <small class="text-slate-600 font-nomral block">1976 - 1979</small>
+                  <button class="inline-block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white">lihat Deskripsi</button>
+                </div>
+              </li>
+
+              <li class="timeline-container left-container pr-5">
+                <div class="text-box">
+                  <h2 class="font-bold text-lg text-secondary sm:text-2xl">MakeUp Acara Spesial</h2>
+                  <small class="text-slate-600 font-nomral block">1976 - 1979</small>
+                  <button class="inline-block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white">lihat Deskripsi</button>
+                </div>
+              </li>
+
+              <li class="timeline-container right-container self-end pl-5">
+                <div class="text-box">
+                  <h2 class="font-bold text-lg text-secondary sm:text-2xl">MakeUp Graduation</h2>
+                  <small class="text-slate-600 font-nomral block">1976 - 1979</small>
+                  <button class="inline-block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white">lihat Deskripsi</button>
+                </div>
+              </li>
+
+              <li class="timeline-container left-container">
+                <div class="text-box">
+                  <h2 class="font-bold text-lg text-secondary max-[322px] :mr-1 sm:text-2xl">MakeUp Karakter</h2>
+                  <small class="text-slate-600 font-normal block">1970 - 1976</small>
+                  <button class="inline-block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white">lihat Deskripsi</button>
+                </div>
+              </li>
+
+              <li class="timeline-container right-container self-end pl-5">
+                <div class="text-box">
+                  <h2 class="font-bold text-lg text-secondary sm:text-2xl">MakeUp Instagram</h2>
+                  <small class="text-slate-600 font-nomral block">1976 - 1979</small>
+                  <button class="inline-block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white">lihat Deskripsi</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- *TIMELINE -->
+        </section>
+        <!-- ========= 
+            *SERVICES 
+             ======== -->
+        <section id="services" class="container text-center mx-auto max-w-[90rem] mt-40 py-8">
+          <h2 class="text-3xl font-bold text-third lg:text-4xl">Apa yang kami sediakan?</h2>
+          <h5 class="font-sans font-semibold text-slate-400">Layanan Kecantikan Profesional</h5>
+
+          <div class="swiper-gallery swiper mx-auto mt-12 h-[35rem] max-[425px]:h-[30rem] overflow-hidden">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide max-h-full overflow-hidden relative border rounded-2xl bg-gradient-to-t from-[rgba(0,0,0,.9)] to-transparent">
+                <span class="text-lg z-10 w-4/5 rounded-md absolute bottom-5 left-0 right-0 mx-auto bg-white py-2 text-slate-900 font-semibold">Wedding Dress</span>
+                <img src="public/assets/img/brittney-weng-Yy1tmz_G3uQ-unsplash.jpg" alt="wedding dress" class="block mix-blend-overlay absolute w-full h-full scale-[1.7] object-cover object-bottom" />
+              </div>
+              <div class="swiper-slide max-h-full overflow-hidden relative border rounded-2xl bg-gradient-to-t from-[rgba(0,0,0,.9)] to-transparent">
+                <span class="text-lg z-10 w-4/5 rounded-md absolute bottom-5 left-0 right-0 mx-auto bg-white py-2 text-slate-900 font-semibold">Professional wedding photographer</span>
+                <img src="public/assets/img/eugenivy_now-mUYjrnQLrSA-unsplash.jpg" alt="wedding dress" class="block mix-blend-overlay absolute w-full h-full scale-[1] object-cover object-bottom" />
+              </div>
+              <div class="swiper-slide max-h-full overflow-hidden relative border rounded-2xl bg-gradient-to-t from-[rgba(0,0,0,.9)] to-transparent">
+                <span class="text-lg z-10 w-4/5 rounded-md absolute bottom-5 left-0 right-0 mx-auto bg-white py-2 text-slate-900 font-semibold">Wedding Decoration</span>
+                <img src="public/assets/img/vitor-monthay-JL2n-GWXCJo-unsplash.jpg" alt="wedding dress" class="block mix-blend-overlay absolute w-full h-full scale-[1] object-cover object-bottom" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </section>
+
+        <section id="projects" class="container text-center mx-auto max-w-[90rem] mt-40 py-8">
+          <h2 class="text-3xl font-bold text-third lg:text-4xl">Portfolio</h2>
+          <h5 class="font-sans font-semibold text-slate-400">Menampilkan dewi dalam diri setiap wanita</h5>
+
+          <div class="cards-wrapper">
+            <div class="card">
+              <div class="card-img"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="src/js/app.js"></script>
+  </body>
+</html>
+
+<!-- <h1 class="text-primary text-5xl text-center my-16">Hello World</h1>
+<div class="kotak"></div>
+<div class="w-[20rem] h-[20rem] border bg-tema/100"></div> -->

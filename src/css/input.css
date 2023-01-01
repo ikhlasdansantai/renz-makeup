@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;800&display=swap");
+
+@font-face {
+  font-family: "Monallesia";
+  src: url(../../public/assets/font/Monallesia/Monallesia\ Script.woff2);
+}
+:root {
+  --warna-tema: 2 132 199;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Membuat Style Default yang bisa di gunakan nanti */
+.kotak {
+  @apply w-[100px] h-[100px];
+  background-color: theme(colors[primary] / 50%);
+}
+
+.tab-content {
+  display: none;
+  border-top: none;
+  /* padding: 20px; */
+}
+
+.tab.active h2 {
+  color: #eb996e;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* ========
+  *Debugging code
+  ========= */
+.timeline {
+  position: relative;
+  flex-direction: column;
+  row-gap: 2rem;
+  justify-content: stretch;
+  align-items: stretch;
+}
+.timeline-container {
+  width: 50%;
+  position: relative;
+}
+.timeline::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  z-index: -44;
+  background-color: #eb996e;
+  border-radius: 1rem;
+}
+.left-container {
+  text-align: left;
+  left: 0;
+}
+.left-container::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -1.2rem;
+  margin: auto;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #333;
+}
+.right-container {
+  right: 0;
+  text-align: right;
+}
+.right-container::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -0.8rem;
+  margin: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #333;
+}
+nav {
+  box-shadow: 0px -6px 5px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px -6px 5px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px -6px 5px 0px rgba(0, 0, 0, 0.15);
+}
