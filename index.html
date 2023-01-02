@@ -29,11 +29,11 @@
             </div>
 
             <section class="nav-mobile relative">
-              <section class="group fries-menu w-[25px] h-[20px] flex flex-col justify-between items-center md:hidden relative z-50">
-                <input type="checkbox" id="checkbox" class="hidden opacity-0 peer" />
-                <span class="block bg-white w-full h-[2px] peer-checked/bg-red"></span>
+              <section class="fries-menu w-[25px] h-[20px] flex flex-col justify-between items-center md:hidden relative overflow-hidden z-50">
+                <input type="checkbox" id="checkbox" class="peer opacity-0 absolute top-0 bottom-0 left-0 right-0" />
+                <span class="block bg-white w-full h-[2px] origin-top-left"></span>
                 <span class="block bg-white w-[70%] self-end h-[2px]"></span>
-                <span class="block bg-white w-full h-[2px]"></span>
+                <span class="block bg-white w-full h-[2px] origin-bottom-left"></span>
               </section>
 
               <div
@@ -60,7 +60,7 @@
                   <p>Reviews</p>
                 </span>
                 <span class="nav-menu flex flex-col justify-center items-center gap-2">
-                  <i class="fa-sharp fa-solid fa-address-card text-[3.5rem]"></i>
+                  <img src="public/assets/img/contact-us.png" alt="" class="block w-[3.5rem]" />
                   <p>Contact</p>
                 </span>
               </div>

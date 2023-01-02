@@ -577,6 +577,10 @@ video {
   bottom: 0px;
 }
 
+.top-0{
+  top: 0px;
+}
+
 .left-0{
   left: 0px;
 }
@@ -781,6 +785,14 @@ video {
 
 .max-w-lg{
   max-width: 32rem;
+}
+
+.origin-top-left{
+  transform-origin: top left;
+}
+
+.origin-bottom-left{
+  transform-origin: bottom left;
 }
 
 .scale-\[1\.7\]{
@@ -1049,10 +1061,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-\[3\.5rem\]{
-  font-size: 3.5rem;
-}
-
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1285,6 +1293,41 @@ nav {
 
 .show {
   transform: translateY(0%);
+}
+
+/* ========= 
+  *Nav Mobile 
+  =========== */
+
+.fries-menu span {
+  transition: 400ms;
+}
+
+#checkbox {
+  transform: scale(3);
+  z-index: 30;
+}
+
+#checkbox:checked ~ span {
+  transition: 400ms;
+}
+
+:is(#checkbox:checked ~ span:nth-child(2), #checkbox:checked ~ span:last-child) {
+  background-color: red;
+}
+
+#checkbox:checked ~ span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+#checkbox:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+#checkbox:checked ~ span:last-child {
+  transform: translate(-3px, 0);
+  transform: rotate(-45deg);
 }
 
 .hover\:text-slate-300:hover{

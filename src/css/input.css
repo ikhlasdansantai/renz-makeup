@@ -110,3 +110,34 @@ nav {
 .show {
   transform: translateY(0%);
 }
+
+/* ========= 
+  *Nav Mobile 
+  =========== */
+.fries-menu span {
+  transition: 400ms;
+}
+
+#checkbox {
+  transform: scale(3);
+  z-index: 30;
+}
+#checkbox:checked ~ span {
+  transition: 400ms;
+}
+
+:is(#checkbox:checked ~ span:nth-child(2), #checkbox:checked ~ span:last-child) {
+  background-color: red;
+}
+
+#checkbox:checked ~ span:nth-child(2) {
+  transform: rotate(45deg);
+}
+#checkbox:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+#checkbox:checked ~ span:last-child {
+  transform: translate(-3px, 0);
+  transform: rotate(-45deg);
+}
