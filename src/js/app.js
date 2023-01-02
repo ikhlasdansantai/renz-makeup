@@ -60,6 +60,6 @@ tabs.forEach(function (tab) {
 const friesMenu = document.getElementsByClassName("fries-menu")[0];
 
 friesMenu.addEventListener("click", () => {
-  document.getElementsByClassName("nav-mobile-content")[0].classList.add("translate-y-[0%]");
-  document.getElementsByClassName("nav-mobile-content")[0].classList.remove("translate-y-[100%]");
+  let mobileNavContents = document.getElementsByClassName("nav-mobile-content")[0];
+  mobileNavContents.classList.toggle("show");
 });

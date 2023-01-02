@@ -7,13 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="public/css/output.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
   </head>
   <!-- <body class="h-[10000000000000px]"> -->
   <body>
@@ -24,7 +17,7 @@
           <section class="container nav-wrappers max-w-full sm:max-w-[90rem] p-standart md:p-0 lg:p-standart md:mx-auto flex justify-between items-center bg-[#263238]">
             <h5 class="logo text-2xl font-bold text-slate-100 tracking-wider">RenzMakeup</h5>
 
-            <div class="nav-desktop hidden ml-auto md:flex justify-end items-center justify-self-end">
+            <div class="nav-desktop rela hidden ml-auto md:flex justify-end items-center justify-self-end">
               <ul class="flex md:flex-row text-slate-100 gap-x-2 lg:gap-x-5">
                 <li class="p-2"><a class="font-semibold text-lg hover:text-slate-300" href="#">Home</a></li>
                 <li class="p-2"><a href="#about" class="font-semibold text-lg hover:text-slate-300">About</a></li>
@@ -36,15 +29,15 @@
             </div>
 
             <section class="nav-mobile relative">
-              <section class="fries-menu w-[25px] h-[20px] flex flex-col justify-between items-center group md:hidden relative z-50">
-                <input type="checkbox" id="checkbox" class="hidden opacity-0" />
-                <span class="block bg-white w-full h-[2px]"></span>
+              <section class="group fries-menu w-[25px] h-[20px] flex flex-col justify-between items-center md:hidden relative z-50">
+                <input type="checkbox" id="checkbox" class="hidden opacity-0 peer" />
+                <span class="block bg-white w-full h-[2px] peer-checked/bg-red"></span>
                 <span class="block bg-white w-[70%] self-end h-[2px]"></span>
                 <span class="block bg-white w-full h-[2px]"></span>
               </section>
 
               <div
-                class="nav-mobile-content container transition duration-300 translate-y-[100%] grid grid-cols-3 mx-auto fixed gap-10 pb-[5rem] pt-[3rem] h-[60vh] left-0 right-0 bottom-0 -z-10 rounded-[1.2rem] border-4 border-slate-600 overflow-hidden bg-white"
+                class="nav-mobile-content container transition duration-300 grid grid-cols-3 mx-auto fixed gap-10 pb-[5rem] pt-[3rem] h-[60vh] left-0 right-0 bottom-0 -z-10 rounded-[1.2rem] border-4 border-slate-600 overflow-hidden bg-white"
               >
                 <span class="nav-menu flex flex-col justify-center items-center gap-2">
                   <img src="public/assets/img/home.png" alt="" class="block w-[3.5rem]" />

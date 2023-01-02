@@ -104,3 +104,9 @@ nav {
   -webkit-box-shadow: 0px -6px 5px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px -6px 5px 0px rgba(0, 0, 0, 0.15);
 }
+.nav-mobile-content {
+  transform: translateY(100%);
+}
+.show {
+  transform: translateY(0%);
+}
