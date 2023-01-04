@@ -63,3 +63,12 @@ friesMenu.addEventListener("click", () => {
   let mobileNavContents = document.getElementsByClassName("nav-mobile-content")[0];
   mobileNavContents.classList.toggle("show");
 });
+
+function underDevelopment() {
+  Swal.fire({
+    title: "Konten Sedang Dalam Pembangunan!",
+    text: "",
+    icon: "error",
+    confirmButtonText: "OK! 👍",
+  });
+}

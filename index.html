@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="public/css/output.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.css" />
   </head>
   <!-- <body class="h-[10000000000000px]"> -->
   <body>
@@ -75,7 +76,7 @@
           <div class="header-titles container font-Jost font-semibold text-left sm:max-w-6/12">
             <h2 class="text-sm font-sans text-secondary tracking-widest mb-2 lg:text-xl">Hasil yang alami</h2>
             <h1 class="max-[350px]:text-xl text-3xl md:text-3xl lg:text-[2.5rem] lg:leading-[3.5rem] xl:text-5xl xl:leading-[4rem] xl:max-w-[23ch]">Transformasi Wajah Anda Dengan Kemampuan Makeup Kami</h1>
-            <button type="submit" class="border max-[350px]:text-sm inline-block max-w-xs px-7 py-3 mt-6 bg-black text-slate-50 font-bold tracking-widest active:ring active:ring-secondary">Hubungi saya</button>
+            <button type="submit" class="border max-[350px]:text-sm inline-block max-w-xs px-7 py-3 mt-6 bg-black text-slate-50 font-bold tracking-widest active:ring active:ring-secondary" onclick="underDevelopment()">Hubungi saya</button>
           </div>
           <div class="header-icon container max-w-xs sm:max-w-2xl flex">
             <img src="public/assets/img/Makeup artist-pana 1.png" alt="" class="block ml-auto" />
@@ -111,7 +112,7 @@
           <h5 class="font-sans font-semibold text-slate-400">Pendidikan dan Pelatihan</h5>
 
           <div class="tabs tabs-container flex max-w-lg mx-auto justify-between my-12">
-            <div class="tab w-6/12 flex flex-col-reverse justify-center items-center mx-auto pr-4 my-12 gap-5 border-r cursor-pointer max-[350px]:gap-2 sm:gap-7">
+            <div class="tab active w-6/12 flex flex-col-reverse justify-center items-center mx-auto pr-4 my-12 gap-5 border-r cursor-pointer max-[350px]:gap-2 sm:gap-7">
               <h2 class="text-slate-900 text-2xl leading-3 font-bold text-center max-[350px]:text-lg sm:text-[27px]">Pendidikan</h2>
               <div class="tab-icon w-9 sm:w-10">
                 <img src="public/assets/img/graduation-hat.png" alt="graduation-hat" class="block" />
@@ -150,7 +151,7 @@
                 <div class="text-box">
                   <h2 class="font-bold text-lg text-secondary max-[322px]:mr-1 sm:text-2xl">Beauty Intensive Course La Tulipe</h2>
                   <small class="text-slate-600 font-normal">2015</small>
-                  <button class="block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white">lihat sertifikat</button>
+                  <button class="block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white" onclick="underDevelopment()">lihat sertifikat</button>
                 </div>
               </li>
 
@@ -158,7 +159,7 @@
                 <div class="text-box">
                   <h2 class="font-bold text-lg text-secondary sm:text-2xl">Unna Hair & Beauty School</h2>
                   <small class="text-slate-600 font-nomral block">2015 - 9 Months</small>
-                  <button class="inline-block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white">lihat sertifikat</button>
+                  <button class="inline-block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white" onclick="underDevelopment()">lihat sertifikat</button>
                 </div>
               </li>
 
@@ -166,7 +167,7 @@
                 <div class="text-box">
                   <h2 class="font-bold text-lg text-secondary max-[322px]:mr-1 sm:text-2xl">LPK Hedy's</h2>
                   <small class="text-slate-600 font-normal">2015 - 2016</small>
-                  <button class="block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white">lihat sertifikat</button>
+                  <button class="block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white" onclick="underDevelopment()">lihat sertifikat</button>
                 </div>
               </li>
 
@@ -174,7 +175,7 @@
                 <div class="text-box">
                   <h2 class="font-bold text-lg text-secondary sm:text-2xl">UJK LSK di UNNA</h2>
                   <small class="text-slate-600 font-nomral block">1976 - 1979</small>
-                  <button class="inline-block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white">lihat sertifikat</button>
+                  <button class="inline-block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white" onclick="underDevelopment()">lihat sertifikat</button>
                 </div>
               </li>
             </ul>
@@ -190,7 +191,7 @@
                 <div class="text-box">
                   <h2 class="font-bold text-lg text-secondary max-[322px] :mr-1 sm:text-2xl">MakeUp Pernikahan</h2>
                   <small class="text-slate-600 font-normal block">1970 - 1976</small>
-                  <button class="block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white">lihat Deskripsi</button>
+                  <button class="block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white" onclick="underDevelopment()">lihat Deskripsi</button>
                 </div>
               </li>
 
@@ -198,7 +199,7 @@
                 <div class="text-box">
                   <h2 class="font-bold text-lg text-secondary sm:text-2xl">MakeUp Pranikah</h2>
                   <small class="text-slate-600 font-nomral block">1976 - 1979</small>
-                  <button class="inline-block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white">lihat Deskripsi</button>
+                  <button class="inline-block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white" onclick="underDevelopment()">lihat Deskripsi</button>
                 </div>
               </li>
 
@@ -206,7 +207,7 @@
                 <div class="text-box">
                   <h2 class="font-bold text-lg text-secondary sm:text-2xl">MakeUp Acara Spesial</h2>
                   <small class="text-slate-600 font-nomral block">1976 - 1979</small>
-                  <button class="inline-block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white">lihat Deskripsi</button>
+                  <button class="inline-block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white" onclick="underDevelopment()">lihat Deskripsi</button>
                 </div>
               </li>
 
@@ -214,7 +215,7 @@
                 <div class="text-box">
                   <h2 class="font-bold text-lg text-secondary sm:text-2xl">MakeUp Graduation</h2>
                   <small class="text-slate-600 font-nomral block">1976 - 1979</small>
-                  <button class="inline-block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white">lihat Deskripsi</button>
+                  <button class="inline-block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white" onclick="underDevelopment()">lihat Deskripsi</button>
                 </div>
               </li>
 
@@ -222,7 +223,7 @@
                 <div class="text-box">
                   <h2 class="font-bold text-lg text-secondary max-[322px] :mr-1 sm:text-2xl">MakeUp Karakter</h2>
                   <small class="text-slate-600 font-normal block">1970 - 1976</small>
-                  <button class="inline-block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white">lihat Deskripsi</button>
+                  <button class="inline-block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white" onclick="underDevelopment()">lihat Deskripsi</button>
                 </div>
               </li>
 
@@ -230,7 +231,7 @@
                 <div class="text-box">
                   <h2 class="font-bold text-lg text-secondary sm:text-2xl">MakeUp Instagram</h2>
                   <small class="text-slate-600 font-nomral block">1976 - 1979</small>
-                  <button class="inline-block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white">lihat Deskripsi</button>
+                  <button class="inline-block text-xs sm:text-sm rounded-lg border p-3 py-1 mt-3 bg-black text-white" onclick="underDevelopment()">lihat Deskripsi</button>
                 </div>
               </li>
             </ul>
@@ -278,6 +279,7 @@
         </section>
       </main>
     </div>
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="src/js/app.js"></script>
   </body>
