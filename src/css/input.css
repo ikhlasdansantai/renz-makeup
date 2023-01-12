@@ -141,3 +141,17 @@ nav {
   transform: translate(-3px, 0);
   transform: rotate(-45deg);
 }
+
+/* CONTACT */
+/* #contact::after {
+  content: "";
+  display: block;
+  background-image: url("https://source.unsplash.com/1000x800?computer");
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 10000000;
+} */
