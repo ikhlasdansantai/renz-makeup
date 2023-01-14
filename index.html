@@ -21,7 +21,7 @@
   <!-- <body class="h-[10000000000000px]"> -->
   <body class="dark:bg-[#141728]">
     <div class="container-all">
-      <header class="container max-w-full mx-auto bg-primary min-h-[100vh] min-[1700px]:min-h-[40rem] flex flex-col">
+      <header id="header" class="container max-w-full mx-auto bg-primary min-h-[100vh] min-[1700px]:min-h-[40rem] flex flex-col">
         <!-- *Navbar BOS -->
         <nav class="container bg-[#263238] max-w-full fixed bottom-0 md:relative sm:p-standart z-50">
           <section class="container flex justify-between items-center bg-[#263238] nav-wrappers max-w-full sm:max-w-[90rem] p-standart md:p-0 md:mx-auto lg:p-standart">
@@ -29,12 +29,12 @@
 
             <div class="nav-desktop rela hidden ml-auto md:flex justify-end items-center justify-self-end">
               <ul class="flex md:flex-row text-slate-100 gap-x-2 lg:gap-x-5">
-                <li class="p-2"><a class="font-semibold text-lg hover:text-slate-300" href="#">Home</a></li>
+                <li class="p-2"><a class="font-semibold text-lg hover:text-slate-300" href="#header">Home</a></li>
                 <li class="p-2"><a href="#about" class="font-semibold text-lg hover:text-slate-300">About</a></li>
                 <li class="p-2"><a href="#services" class="font-semibold text-lg hover:text-slate-300">Layanan</a></li>
                 <!-- <li class="p-2"><a class="font-semibold text-lg hover:text-slate-300" href="#">Portfolio</a></li> -->
                 <li class="p-2"><a href="#team" class="font-semibold text-lg hover:text-slate-300" href="#">Team Saya</a></li>
-                <li class="p-2"><a class="font-semibold text-lg hover:text-slate-300" href="#">Contact</a></li>
+                <li class="p-2"><a class="font-semibold text-lg hover:text-slate-300" href="#contact">Contact</a></li>
               </ul>
             </div>
 
@@ -50,30 +50,30 @@
         </nav>
 
         <div class="nav-mobile-content container transition duration-300 grid grid-cols-3 mx-auto fixed gap-10 pb-[5rem] pt-[3rem] h-[60vh] left-0 right-0 bottom-0 z-10 rounded-[1.2rem] border-4 border-slate-600 overflow-hidden bg-white">
-          <span class="nav-menu flex flex-col justify-center items-center gap-2">
+          <a href="#header" class="nav-menu flex flex-col justify-center items-center gap-2">
             <img src="public/assets/img/home.png" alt="" class="block w-[3.5rem]" />
             <p>Home</p>
-          </span>
-          <span class="nav-menu flex flex-col justify-center items-center gap-2">
+          </a>
+          <a href="#about" class="nav-menu flex flex-col justify-center items-center gap-2">
             <img src="public/assets/img/woman.png" alt="" class="block w-[3.5rem]" />
             <p>About</p>
-          </span>
-          <span class="nav-menu flex flex-col justify-center items-center gap-2">
+          </a>
+          <a href="#services" class="nav-menu flex flex-col justify-center items-center gap-2">
             <img src="public/assets/img/makeup-bw.png" alt="" class="block w-[3.5rem]" />
             <p>Layanan</p>
-          </span>
-          <span class="nav-menu flex flex-col justify-center items-center gap-2">
+          </a>
+          <a href="#services" class="nav-menu flex flex-col justify-center items-center gap-2">
             <img src="public/assets/img/success.png" alt="" class="block w-[3.5rem]" />
             <p>Portfolio</p>
-          </span>
-          <span class="nav-menu flex flex-col justify-center items-center gap-2">
+          </a>
+          <a href="#team" class="nav-menu flex flex-col justify-center items-center gap-2">
             <img src="public/assets/img/thumbs-up.png" alt="" class="block w-[3.5rem]" />
-            <p>Reviews</p>
-          </span>
-          <span class="nav-menu flex flex-col justify-center items-center gap-2">
+            <p>Tim kami</p>
+          </a>
+          <a href="#contact" class="nav-menu flex flex-col justify-center items-center gap-2">
             <img src="public/assets/img/contact-us.png" alt="" class="block w-[3.5rem]" />
             <p>Contact</p>
-          </span>
+          </a>
         </div>
 
         <!-- ======================= 
