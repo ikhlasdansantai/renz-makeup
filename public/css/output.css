@@ -723,10 +723,6 @@ video {
   display: none;
 }
 
-.h-\[10000000000000px\]{
-  height: 10000000000000px;
-}
-
 .h-\[20px\]{
   height: 20px;
 }
@@ -881,6 +877,10 @@ video {
 
 .items-stretch{
   align-items: stretch;
+}
+
+.justify-start{
+  justify-content: flex-start;
 }
 
 .justify-end{
@@ -1967,48 +1967,13 @@ nav {
     max-width: 23ch;
   }
 
-  .xl\:max-w-3xl{
-    max-width: 48rem;
-  }
-
-  .xl\:max-w-6xl{
-    max-width: 72rem;
-  }
-
   .xl\:gap-24{
     gap: 6rem;
-  }
-
-  .xl\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .xl\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .xl\:text-7xl{
-    font-size: 4.5rem;
-    line-height: 1;
   }
 
   .xl\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
-  }
-
-  .xl\:leading-\[4rem\]{
-    line-height: 4rem;
-  }
-
-  .xl\:leading-\[6rem\]{
-    line-height: 6rem;
-  }
-
-  .xl\:leading-\[5rem\]{
-    line-height: 5rem;
   }
 
   .xl\:leading-\[4\.5rem\]{
